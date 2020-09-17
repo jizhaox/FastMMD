@@ -3,6 +3,9 @@ function [d1, d2, ds1, ds2, ds3] = MMD3(xPos, xNeg, allSgm)
 % vectorized version, fast and need limit memory
 % See Eqn. (3-5) in [Gretton et al. 2012 JMLR]
 % The kernel is Gaussian: k(x,y) = exp(-||x-y||_2^2 / (2*sigma^2)).
+% Reference:
+%  [1] A. Gretton, K. M. Borgwardt, M. J. Rasch, B. Scholkopf, and A. Smola. A kernel two-sample test. 
+%      JMLR, 13(3):723–773, 2012.
 %
 % Input:
 %  xPos, xNeg: two sample sets

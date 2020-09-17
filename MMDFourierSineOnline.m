@@ -3,10 +3,8 @@ function [d1, d2] = MMDFourierSineOnline(X, Y, allSgm, nBasis, isPlot)
 % This is an online version
 % The kernel is Gaussian: k(x,y) = exp(-||x-y||_2^2 / (2*sigma^2)).
 % Reference:
-%  [1] Ji Zhao, Deyu Meng. Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
-%      NIPS Workshop on Randomized Methods for Machine Learning (RMML2013), 2013.
-%  [2] Ji Zhao, Deyu Meng. FastMMD: Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
-%      Neural Computation, 2015.
+%  [1] Ji Zhao, and Deyu Meng. FastMMD: Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
+%      Neural Computation, 27(6): 1345 - 1372, 2015.
 %
 % Input:
 %  X: samples, each row is a sample

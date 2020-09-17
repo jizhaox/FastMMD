@@ -2,7 +2,8 @@ function [d1, d2] = MMDFastfood(xPos, xNeg, allSgm, nBasis)
 % Approximate the MMD by Fastfood
 % The kernel is Gaussian: k(x,y) = exp(-||x-y||_2^2 / (2*sigma^2)).
 % Reference:
-%  [1] Ji Zhao, Deyu Meng. FastMMD: Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
+%  [1] Ji Zhao, and Deyu Meng. FastMMD: Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
+%      Neural Computation, 27(6): 1345 - 1372, 2015.
 % Input:
 %  xPos, xNeg: two sample sets
 %  allSgm: bandwidth parameter for Gaussian kernel, scale or vector

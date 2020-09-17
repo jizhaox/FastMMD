@@ -3,10 +3,8 @@ function [d1, d2] = MMDFourierFeature(xPos, xNeg, allSgm, nBasis)
 %  with block process
 % The kernel is Gaussian: k(x,y) = exp(-||x-y||_2^2 / (2*sigma^2)).
 % Reference:
-%  [1] Ji Zhao, Deyu Meng. Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
-%      NIPS Workshop on Randomized Methods for Machine Learning (RMML2013), 2013.
-%  [2] Ji Zhao, Deyu Meng. FastMMD: Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
-%      Neural Computation, 2015.
+%  [1] Ji Zhao, and Deyu Meng. FastMMD: Ensemble of Circular Discrepancy for Efficient Two-Sample Test.
+%      Neural Computation, 27(6): 1345 - 1372, 2015.
 % Input:
 %  xPos, xNeg: two sample sets
 %  allSgm: bandwidth parameter for Gaussian kernel, scale or vector
